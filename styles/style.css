@@ -99,7 +99,7 @@ header a {
     height: 100%;
 }
 
-.textoBienvenida h2:hover {
+.textoBienvenida h2::after{
     color: blueviolet;
     font-style: italic;
     font-size: 400%;
