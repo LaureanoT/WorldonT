@@ -10,6 +10,7 @@
 
 body {
     background-color: rgba(14, 14, 14, 0.993);
+    background-image: url(https://img.freepik.com/vector-premium/tipografia-graffiti-tag-never-stop_251214-86.jpg?w=740);
 }
 
 header {
@@ -123,6 +124,10 @@ header a {
 
 header p {
     margin-left: 5%;
+}
+
+.row{
+    margin-right: 0px;
 }
 
 .card{
