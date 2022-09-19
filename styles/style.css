@@ -164,10 +164,10 @@ header p {
     grid-area: tituloQuienes;
     font-size: xx-large;
     text-align: center;
-    margin-top: 30%;
-    color: blueviolet;
+    margin-top: 10%;
+    color: rgb(14, 14, 14);
     text-shadow: 2px 2px 5px #27ff00;
-    -webkit-text-stroke: 3px rgb(139, 10, 199);
+/*     -webkit-text-stroke: 3px rgb(139, 10, 199); */
 
 }
 
@@ -178,12 +178,13 @@ header p {
     flex-direction: row-reverse;
     justify-content: space-around;
     border: solid 4px;
-    border-color: rgba(27, 25, 25, 0.747);
-    border-radius: 10px;
+    border: blueviolet solid 5px;
+    border-radius: 15px;
     margin-top: 10%;
     margin-left: 3%;
-    background-color: rgba(27, 25, 25, 0.747);
-    padding: 8%;
+    margin-right: 3%;
+    background-color: rgba(27, 25, 25, 0.993);
+    padding: 5%;
 }
 
 .box img {
@@ -209,12 +210,12 @@ header p {
     justify-content: space-between;
     margin: none;
     border: solid 4px;
-    border-color: rgba(27, 25, 25, 0.747);
-    border-radius: 10px;
+    border: blueviolet solid 5px;
+    border-radius: 15px;
     margin: 3%;
-    background-color: rgba(27, 25, 25, 0.747);
+    background-color: rgba(27, 25, 25, 0.993);
     align-items: center;
-    padding: 8%;
+    padding: 5%;
 }
 
 .box2 img {
@@ -228,17 +229,17 @@ header p {
     font-size: large;
     width: 47%;
     text-align: start;
-    color: blueviolet;
+    color: rgb(255, 255, 255);
 }
 
 .finalTituloQuienes {
     grid-area: finalTituloQuienes;
     font-size: xx-large;
     text-align: center;
-    margin-top: 30%;
-    color: blueviolet;
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
     text-shadow: 2px 2px 5px #27ff00;
-    -webkit-text-stroke: 3px rgb(139, 10, 199);
+/*     -webkit-text-stroke: 3px rgb(139, 10, 199); */
 }
 
 
@@ -254,15 +255,15 @@ header p {
     text-align: center;
     margin: 5%;
     padding: 2%;
-    background-color: rgba(27, 25, 25, 0.747);
-    border-radius: 10px;
-    border-color: aquamarine;
+    background-color: rgba(27, 25, 25, 0.993);
     box-sizing: content-box;
+    border: blueviolet solid 5px;
+    border-radius: 15px;
 }
 
 .galeriaBienvenida p {
     font-size: x-large;
-    color: blueviolet;
+    color: rgb(255, 255, 255);
     -webkit-text-stroke: 1px black;
 }
 
@@ -277,6 +278,10 @@ header p {
 
 .galeriaImagenes {
     display: grid;
+    background-color: rgba(27, 25, 25, 0.993);
+    padding: 5%;
+    border: blueviolet solid 5px;
+    border-radius: 15px;
     grid-template-areas:
         "img1 img2 img3"
         "img4 img5 img6";
@@ -309,10 +314,12 @@ header p {
 }
 
 .productosTitulo {
-    text-align: center;
-    padding: 5%;
     font-size: xx-large;
-    color: blueviolet;
+    text-align: center;
+    margin-top: 2%;
+    padding: 5%;
+    color: rgb(14, 14, 14);
+    text-shadow: 2px 2px 5px #27ff00;
 }
 
 .productosIzquierda {
@@ -320,7 +327,7 @@ header p {
     margin-left: 2%;
     margin-bottom: 2%;
     margin-right: 2%;
-    background-color: rgba(27, 25, 25, 0.747);
+    background-color: rgba(27, 25, 25, 0.993);
     padding: 3%;
     border-radius: 10px;
 }
@@ -345,7 +352,7 @@ header p {
     margin-left: 2%;
     margin-bottom: 2%;
     margin-right: 2%;
-    background-color: rgba(27, 25, 25, 0.747);
+    background-color: rgba(27, 25, 25, 0.993);
     padding: 3%;
     border-radius: 10px;
 }
