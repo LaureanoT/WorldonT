@@ -373,6 +373,7 @@ header p {
 
 form {
     display: flex;
+    height: 100vh;
     flex-direction: column;
     width: 35%;
     margin: auto;
