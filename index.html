@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="sticky-top">
         <div class="logotipo">
             <img id="logo" src="./images/Worldon.png" />
             <p>Worldon T</p>
         </div>
-        <div class="navbar">
+        <div class="navegacionBarra">
             <ul>
                 <li>
                     <a href="index.html">Inicio
@@ -42,10 +43,38 @@
 
     <main class="inicioConteiner">
         <section class="conteiner">
-            <video src="./images/production ID_4889077.mp4" autoplay loop muted></video>
             <div class="textoBienvenida">
-                <h2>It's time to make Worldon T your partner</h2>
+                <h2>It's time to make</h2>
+                <h2>Worldon T your partner</h2>
             </div>
+            <video src="./images/production-skate.mp4" autoplay loop muted></video>
+        </section>
+        <section class="row justify-content-around cards">
+            <div class="card" style="width: 18rem;">
+                <img src="https://precinctskateshop.com.au/wp-content/uploads/2020/12/Build-a-Complete-600x600.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Creamos TU tabla</h5>
+                  <p class="card-text">Entra a la página de contacto, te comunicas con nosotros, nos dices el estilo de tu tabla y nosotros la creamos a tu gusto!</p>
+                  <a href="../pages/contacto.html" class="btn btn-primary">Ir a Contacto</a>
+                </div>
+              </div>
+    
+              <div class="card" style="width: 18rem;">
+                <img src="https://image.shutterstock.com/image-vector/fast-shipping-delivery-truck-flat-260nw-1908380944.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Envios</h5>
+                  <p class="card-text">Una vez finalizado el producto, nos ponemos en contacto para coordinar el envio, y despreocupate, solo pagas cuando el paquete llega a tu casa!</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="https://media.istockphoto.com/photos/young-man-skateboarding-in-los-angeles-picture-id1209988354?k=20&m=1209988354&s=612x612&w=0&h=jzJ0dTHDhJA2oYvoFpNMRmvWI0ZegV5dBjdYH5o0lzI=" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">¿Quieres ver sobre nuestro trabajo?</h5>
+                  <p class="card-text">Si te interesa ver nuestros productos, que mejor que ir a nuestra galería para ver a nuestros clientes felices!</p>
+                  <a href="./pages/galeria.html" class="btn btn-primary">Galería</a>
+                </div>
+              </div>
         </section>
 
     </main>
