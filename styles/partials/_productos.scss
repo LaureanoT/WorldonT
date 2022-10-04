@@ -1,3 +1,7 @@
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
 .productos {
     display: grid;
     grid-template-rows: 0.3fr 2fr;
@@ -29,8 +33,9 @@
 
 
 .productosIzquierda img {
-    width: 45%;
-    height: 45%;
+/*     width: 45%;
+    height: 45%; */
+    @include sizes(45%, 45%);
     border-radius: 10px;
 }
 
@@ -38,23 +43,16 @@
     text-align: justify;
     padding: 10%;
     font-size: large;
-    color: blueviolet;
+    color: map-get($textoProductos, izquierda);
 }
 
 .productosDerecha {
-    display: flex;
+    @extend .productosIzquierda;
     flex-direction: row-reverse;
-    margin-left: 2%;
-    margin-bottom: 2%;
-    margin-right: 2%;
-    background-color: rgba(27, 25, 25, 0.993);
-    padding: 3%;
-    border-radius: 10px;
 }
 
 .productosDerecha img {
-    width: 45%;
-    height: 45%;
+    @include sizes(45%, 45%);
     border-radius: 10px;
 }
 
@@ -62,8 +60,13 @@
     text-align: justify;
     padding: 10%;
     font-size: large;
-    color: #27ff00;
+    color: map-get($textoProductos, derecha);
 }
+
+$textoProductos: (
+    izquierda:blueviolet,
+    derecha:#27ff00,
+);
 
 @media screen and (max-width: 600px){
     .textoProductosIzquierda {
