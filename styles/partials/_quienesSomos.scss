@@ -127,10 +127,8 @@
         border-color: rgba(27, 25, 25, 0.747);
         border-radius: 10px;
         margin-top: 10%;
-        margin-left: 0;
         margin-bottom: 50px;
-        background-color: rgba(27, 25, 25, 0.747);
-        padding: 0;
+        /* background-color: rgba(27, 25, 25, 0.747); */
     }
 
     .box img {
@@ -165,10 +163,8 @@
         border: solid 4px;
         border-color: rgba(27, 25, 25, 0.747);
         border-radius: 10px;
-        margin: 0%;
-        background-color: rgba(27, 25, 25, 0.747);
+        margin-bottom: 3%;
         align-items: center;
-        padding: 0%;
     }
 
     .box2 img{
@@ -181,7 +177,7 @@
         font-size: large;
         width: 100%;
         text-align: center;
-        color: blueviolet;
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -242,6 +238,6 @@
         font-size: large;
         width: 100%;
         text-align: center;
-        color: blueviolet;
+        color: rgb(255, 255, 255);
     }
 }

@@ -37,14 +37,13 @@
     text-shadow: 2px 4px 7px #27ff00;
 }
 
-
-
 .row{
-    margin-right: 1px;
+    margin-right: 0;
 }
 
 .card{
-    background-color: rgb(0, 0, 0);
+    width: 17rem;
+    background-color: black;
     color: white;
 }
 
@@ -62,7 +61,6 @@
         flex-direction: column-reverse;
     }
     .textoBienvenida {
-        position: relative;
         width: 100%;
         height: auto;
         margin-left: 0;
@@ -71,11 +69,15 @@
     .textoBienvenida h2{
         color: rgb(0, 0, 0);
         font-style: italic;
-        font-size: 400%;
+        font-size: 250%;
         width: 100%;
         text-align: center;
         text-shadow: 2px 4px 7px #27ff00;
         -webkit-text-stroke: 2px black;
+    }
+    .card{
+        margin: 10%;
+        width: 18rem;
     }
 }
 
@@ -84,6 +86,7 @@
         width: 100%;
         height: auto;
         margin-left: 0;
+        position: absolute;
 
          h2{
         color: rgb(0, 0, 0);
