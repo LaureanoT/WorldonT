@@ -1,0 +1,93 @@
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+.productos {
+    display: grid;
+    grid-template-rows: 0.3fr 2fr;
+    grid-template-areas:
+        "productosIzquierda"
+        "productosDerecha"
+        "productosIzquierda";
+    align-items: baseline;
+}
+
+.productosTitulo {
+    font-size: xx-large;
+    background-color: rgba(27, 25, 25, 0.993);
+    text-align: center;
+    margin: 3% 2% 3% auto;
+    border: solid blueviolet 5px;
+    border-radius: 10px;
+    padding: 3%;
+    color: rgb(14, 14, 14);
+    text-shadow: 2px 2px 5px #27ff00;
+}
+
+$textoProductos: (
+    izquierda:blueviolet,
+    derecha:#27ff00,
+);
+
+.productosIzquierda {
+    display: flex;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    background-color: rgba(27, 25, 25, 0.993);
+    border: solid blueviolet 5px;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+
+.productosIzquierda img {
+/*     width: 45%;
+    height: 45%; */
+    @include sizes(45%, 45%);
+    border-radius: 10px;
+}
+
+.textoProductosIzquierda {
+    text-align: justify;
+    padding: 10%;
+    font-size: large;
+    color: map-get($textoProductos, izquierda);
+}
+
+.productosDerecha {
+    @extend .productosIzquierda;
+    flex-direction: row-reverse;
+}
+
+.productosDerecha img {
+    @include sizes(45%, 45%);
+    border-radius: 10px;
+}
+
+.textoProductosDerecha {
+    text-align: justify;
+    padding: 10%;
+    font-size: large;
+    color: map-get($textoProductos, derecha);
+}
+
+
+@media screen and (max-width: 600px){
+
+    .textoProductosIzquierda {
+        text-align: justify;
+        margin-left: 5%;
+        font-size: large;
+        color: blueviolet;
+        padding: 0;
+    }
+    .textoProductosDerecha {
+        text-align: justify;
+        margin-right: 5%;
+        font-size: large;
+        color: #27ff00;
+        padding: 0;
+    }
+}
+

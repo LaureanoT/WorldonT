@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #27ff00;
+    box-shadow: 5px -8px 12px black;
+}
+
+footer p {
+    color: rgb(138, 30, 138);
+    font-size: x-large;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+
+}
+
+.RedesSociales img {
+    border-radius: 25px;
+    margin-bottom: 0%;
+    margin-top: 0.8%;
+    margin-block: 10px;
+    display: inline-block;
+    padding: 3px 1px 3px 10px;
+    margin-left: 40px;
+    width: 75px;
+    align-items: right;
+}
